@@ -107,12 +107,12 @@ var lyr_Limite_Brulain_5 = new ol.layer.Vector({
                 title: 'Limite_Brulain'
             });
 var group_Final = new ol.layer.Group({
-                                layers: [lyr_PlanIGN_0,lyr_Zone_PLU_1,lyr_Parcelles_cadastrale_2,lyr_Batimentsdclars_3,lyr_Donnees_densification_construction_4,lyr_Limite_Brulain_5,],
+                                layers: [lyr_Zone_PLU_1,lyr_Parcelles_cadastrale_2,lyr_Batimentsdclars_3,lyr_Donnees_densification_construction_4,lyr_Limite_Brulain_5,],
                                 fold: 'open',
                                 title: 'Final'});
 
 lyr_PlanIGN_0.setVisible(true);lyr_Zone_PLU_1.setVisible(true);lyr_Parcelles_cadastrale_2.setVisible(true);lyr_Batimentsdclars_3.setVisible(true);lyr_Donnees_densification_construction_4.setVisible(true);lyr_Limite_Brulain_5.setVisible(true);
-var layersList = [group_Final];
+var layersList = [lyr_PlanIGN_0,group_Final];
 lyr_Zone_PLU_1.set('fieldAliases', {'fid': 'fid', 'gid': 'gid', 'gpu_doc_id': 'gpu_doc_id', 'gpu_status': 'gpu_status', 'gpu_timestamp': 'gpu_timestamp', 'partition': 'partition', 'libelle': 'libelle', 'libelong': 'libelong', 'typezone': 'typezone', 'destdomi': 'destdomi', 'nomfic': 'nomfic', 'urlfic': 'urlfic', 'insee': 'insee', 'datappro': 'datappro', 'datvalid': 'datvalid', 'idurba': 'idurba', 'idzone': 'idzone', 'lib_idzone': 'lib_idzone', 'formdomi': 'formdomi', 'destoui': 'destoui', 'destcdt': 'destcdt', 'destnon': 'destnon', 'symbole': 'symbole', });
 lyr_Parcelles_cadastrale_2.set('fieldAliases', {'fid': 'fid', 'id': 'id', 'commune': 'commune', 'prefixe': 'prefixe', 'section': 'section', 'numero': 'numero', 'contenance': 'contenance', 'created': 'created', 'updated': 'updated', });
 lyr_Batimentsdclars_3.set('fieldAliases', {'commune': 'commune', 'nom': 'nom', 'type': 'type', 'created': 'created', 'updated': 'updated', });
